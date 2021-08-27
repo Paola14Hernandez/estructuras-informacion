@@ -14,6 +14,14 @@ public class Main {
     public static void main(String[] args) {
         log.debug("Hello World : this is a debug message");
         log.info("Hello World : this is an info message");
+        TADsGato gaspar=new TADsGato();
+        log.debug(" Datos del gato ");
+        gaspar.mostrarAnimal();
+        gaspar.Comunicar();
+        TADsPerro sasuke=new TADsPerro();
+        log.debug(" Datos del perro ");
+        sasuke.mostrarAnimal();
+        sasuke.Comunicar();
     }
 
 }
