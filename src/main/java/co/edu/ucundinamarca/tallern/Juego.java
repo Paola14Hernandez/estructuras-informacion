@@ -53,6 +53,7 @@ public class Juego {
     
     //metodo
     public void mostrarVidasRestantes(){
+        
         log.info("Su numero de vidas es: "+NumVidas);  
      }
     public void  QuitarVidas(){
@@ -67,9 +68,11 @@ public class Juego {
       }
     }
     public void ReiniciaPartida(){
+        
         log.info(Vidas);
     }
     public void ActualizarRecord(){
+        //revisar
        for(int i=record;i<=Vidas;i++){
            for( int j=NumVidas;j>=0;j--){
               if(record==NumVidas){
