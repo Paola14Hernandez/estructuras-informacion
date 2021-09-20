@@ -5,21 +5,28 @@
  */
 package co.edu.ucundinamarca.tallern;
 
-import static co.edu.ucundinamarca.tallern.Main.log;
+
+import java.util.Scanner;
 import org.apache.log4j.Logger;
+import java.math.*;
 
 /**
  *
  * @author Paola Hernandez
  */
 public class Funciones {
-     static Logger log = Logger.getLogger(Main.class.getName());
+     static Logger log = Logger.getLogger(Funciones.class.getName());
 
     //atributos
     private int numero;
+    private double base;
+    private double exponente;
+    
     //Constructor
-    public Funciones(int numero) {
+    public Funciones(int numero,double base,double exponente) {
         this.numero = numero;
+        this.base=base;
+        this.base=exponente;
     }
     //Getters y Setters
     public int getNumero() {
@@ -29,16 +36,50 @@ public class Funciones {
     public void setNumero(int numero) {
         this.numero = numero;
     }
+
+    public double getBase() {
+        return base;
+    }
+
+    public void setBase(int base) {
+        this.base = base;
+    }
+
+    public double getExponente() {
+        return exponente;
+    }
+
+    public void setExponente(int exponente) {
+        this.exponente = exponente;
+    }
     
     //algoritmo recursivo
-    public static int factorial(int numero){
-         
-        
+    public static int factorialRec(int numero){
+       
+        int resultado;
         if(numero==0){
-            return 1;
+            return resultado=1;
         }
         else{
-            return numero*factorial(numero-1);
+           return  resultado=numero*factorialRec(numero-1);
         }
     }
+    //algoritmo iterativo
+    public static int factorial(int numero){
+          int resultado=1;
+          for(int i=1;i<=numero;i++){
+          resultado=resultado*i;
+         }
+           return resultado;
+        }
+    public static double potencia(double base,double exponente){
+       
+        if(exponente==0){
+            return 1;
+        }else{
+            return Math.pow(base, exponente);
+        }
+            
+    }
+    
 }
