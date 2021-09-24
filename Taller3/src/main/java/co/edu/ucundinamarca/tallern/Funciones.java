@@ -28,6 +28,10 @@ public class Funciones {
         this.base=base;
         this.base=exponente;
     }
+
+    public Funciones() {
+    }
+    
     //Getters y Setters
     public int getNumero() {
         return numero;
@@ -54,7 +58,7 @@ public class Funciones {
     }
     
     //algoritmo recursivo
-    public static int factorialRec(int numero){
+    public int factorialRec(int numero){
        
         int resultado;
         if(numero==0){

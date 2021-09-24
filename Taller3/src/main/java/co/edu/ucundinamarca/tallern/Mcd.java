@@ -20,7 +20,9 @@ public class Mcd {
     }
     public static void main(String[] args) {
         int a=96, b=36;
-        log.info("mcd ("+ a +" , "+ b +" )="+mcd(a,b));
+        log.info("Inicio de MCD "+ a +","+ b );
+        
+        log.info(" Fin del MCD ("+ a +" , "+ b +" )="+mcd(a,b));
     }
     
 }
