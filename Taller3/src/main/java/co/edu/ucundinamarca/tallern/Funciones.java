@@ -58,7 +58,7 @@ public class Funciones {
     }
     
     //algoritmo recursivo
-    public int factorialRec(int numero){
+    public static int factorialRec(int numero){
        
         int resultado;
         if(numero==0){
