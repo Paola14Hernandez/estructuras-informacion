@@ -44,8 +44,10 @@ public class Colegio {
     public String toString() {
         return "Colegio Nacionalidad=" + Nacionalidad + '}';
     }
+   // Map<String, Colegio> alumno=new HashMap<>();
     public void agregarAlumno(String nacionalidad){
         
+      
         if(alumno.containsKey(nacionalidad)){
            Integer i=(Integer) alumno.get(nacionalidad);
            alumno.remove(nacionalidad);

@@ -21,7 +21,7 @@ public class MainColegio {
     static Logger log = Logger.getLogger(MainColegio.class.getName());
     public static void main(String[] args) {
     
-    Colegio colegio1=new Colegio();
+    Colegio colegio1=new Colegio("Colombiana");
     Colegio colegio2=new Colegio();
     Colegio colegio3=new Colegio();
        colegio1.agregarAlumno("COLOMBIANA");
