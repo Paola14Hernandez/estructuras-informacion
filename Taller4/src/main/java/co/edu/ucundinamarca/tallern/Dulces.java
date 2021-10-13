@@ -6,12 +6,17 @@
 package co.edu.ucundinamarca.tallern;
 
 import java.util.ArrayList;
+import java.util.Iterator;
+import org.apache.log4j.Logger;
 
 /**
  *
  * @author Paola Hernandez
  */
 public class Dulces {
+
+    static Logger log = Logger.getLogger(Dulces.class.getName());
+    ArrayList<String> dulces = new ArrayList();
 
     public static void main(String[] args) {
 
@@ -26,8 +31,16 @@ public class Dulces {
         dulces.add("m&m's");
         dulces.add("Pinguinos");
         dulces.add("Choco Break");
-                
+        imprimirIterador(dulces);
 
     }
 
+    public static void imprimirIterador(ArrayList dulces) {
+       
+      Iterator<String> it= dulces.iterator();
+      while(it.hasNext()){
+          log.info(it.next());
+      }
+    }
+    
 }
