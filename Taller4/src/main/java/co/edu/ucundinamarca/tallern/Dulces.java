@@ -42,5 +42,8 @@ public class Dulces {
           log.info(it.next());
       }
     }
+    public static void imprimirSinIterador(ArrayList dulces){
+       dulces.forEach((item)->log.info(dulces));
+    }
     
 }

@@ -13,18 +13,20 @@ public interface Listable {
     
     public void agregar();
     
-    /*public boolean contiene();
+    //public boolean contiene();
     
-    public Iterator iterador();
+   // public Iterator iterador();
     
-    public void eliminiar();
+    public void eliminiar(int n);
     
-    public boolean estaVacia();
+    //public boolean estaVacia();
     
-    public void primerElemento();
+    //public void primerElemento();
     
-    public void sustituir();
+    //public void sustituir();
     
-    public void vaciar();*/
+    //public void vaciar();*/
+    
+     public void mostrar();
     
 }
