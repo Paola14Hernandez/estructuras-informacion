@@ -13,7 +13,7 @@ public interface Listable {
     
     public void agregar();
     
-    public boolean contiene();
+    /*public boolean contiene();
     
     public Iterator iterador();
     
@@ -25,6 +25,6 @@ public interface Listable {
     
     public void sustituir();
     
-    public void vaciar();
+    public void vaciar();*/
     
 }
