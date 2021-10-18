@@ -34,6 +34,7 @@ public class ListasLC {
           String cadena=" ";
           do{
               cadena=cadena+"{"+auxiliar.dato+"}->";
+              auxiliar=auxiliar.siguiente;
           } while(auxiliar != ultimo.siguiente);
           log.info(cadena);
       }
