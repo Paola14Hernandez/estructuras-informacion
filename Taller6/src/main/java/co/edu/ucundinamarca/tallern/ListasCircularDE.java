@@ -12,6 +12,7 @@ public class ListasCircularDE {
     
     Nodo primero;
     Nodo ultimo;
+     int dato;
     
     public ListasCircularDE(){
         primero=null;
@@ -41,4 +42,23 @@ public class ListasCircularDE {
             actual=actual.siguiente;
         }while(actual!=primero);
     } 
+    public void Buscar(int x){
+        Nodo actual=new Nodo();
+        actual=ultimo;
+        boolean encontrado=false;
+        do{
+            if(actual.dato==x){
+                encontrado=true;
+                dato=actual.dato;
+            }
+            actual=actual.anterior;
+        }while(actual!=ultimo);
+        if(encontrado==true){
+            log.info("Nodo encontrado");
+            log.info(dato);
+        }else{
+            log.info("Nodo no encontrado");
+        }
+    }
+    
 }
