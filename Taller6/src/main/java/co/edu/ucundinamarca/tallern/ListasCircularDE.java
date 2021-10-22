@@ -1,11 +1,15 @@
 
 package co.edu.ucundinamarca.tallern;
 
+import org.apache.log4j.Logger;
+
 /**
  *
  * @author Paola Hernandez
  */
 public class ListasCircularDE {
+    static Logger log = Logger.getLogger(ListasCircularDE.class.getName());
+    
     Nodo primero;
     Nodo ultimo;
     
@@ -29,5 +33,12 @@ public class ListasCircularDE {
             primero.anterior=ultimo;
         }
     }
-    
+    public void Mostrar(){
+        Nodo actual=new Nodo();
+        actual=primero;
+        do{
+            log.info(actual.dato);
+            actual=actual.siguiente;
+        }while(actual!=primero);
+    } 
 }
