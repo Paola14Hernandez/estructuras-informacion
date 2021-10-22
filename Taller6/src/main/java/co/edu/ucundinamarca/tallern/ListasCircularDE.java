@@ -1,6 +1,7 @@
 
 package co.edu.ucundinamarca.tallern;
 
+import java.util.Scanner;
 import org.apache.log4j.Logger;
 
 /**
@@ -12,7 +13,8 @@ public class ListasCircularDE {
     
     Nodo primero;
     Nodo ultimo;
-     int dato;
+    int dato;
+    Scanner teclado=new Scanner(System.in);
     
     public ListasCircularDE(){
         primero=null;
@@ -59,6 +61,17 @@ public class ListasCircularDE {
         }else{
             log.info("Nodo no encontrado");
         }
+    }
+    public void Modificar(int x){
+        Nodo actual=new Nodo();
+        actual=primero;
+        do{
+           if(actual.dato==x){
+               log.info("Ingrese un nuevo valor");
+               actual.dato=teclado.nextInt();
+           } 
+           actual=actual.siguiente;
+        }while(actual != primero);
     }
     
 }

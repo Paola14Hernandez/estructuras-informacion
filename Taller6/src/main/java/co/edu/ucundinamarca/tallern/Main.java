@@ -42,6 +42,11 @@ public class Main {
                     int dato3=teclado.nextInt();
                     lista.Buscar(dato3);
                     break;
+                case 4:
+                    log.info("Ingrese el dato a amodificar");
+                    int dato4=teclado.nextInt();
+                    lista.Modificar(dato4);
+                    break;
             }
                     
        }while(opcion!=5);
