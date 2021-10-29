@@ -36,7 +36,7 @@ public class Main {
                     break;
                 case 2:
                     log.info("Mostrar la Lista");
-                    //lista.Mostrar();
+                    lista.Mostrar();
                     break;
                 case 3:
                     log.info("Enconttrar mayor");

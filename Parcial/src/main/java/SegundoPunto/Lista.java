@@ -5,11 +5,14 @@
  */
 package SegundoPunto;
 
+import org.apache.log4j.Logger;
+
 /**
  *
  * @author Paola Hernandez
  */
 public class Lista {
+     static Logger log = Logger.getLogger(co.edu.ucundinamarca.tallern.Lista.class.getName());
     Nodo inicio;
     Nodo fin;
     
@@ -27,6 +30,16 @@ public class Lista {
         }else{
             inicio=fin;
             fin=new Nodo(dato);
+        }
+    }
+    public void Mostrar(){
+        if(!vacia()){
+            Nodo auxiliar=inicio;
+            while(auxiliar!= null){
+                log.info(auxiliar.dato);
+                auxiliar=auxiliar.siguiente;
+            }
+          log.info(auxiliar.dato);
         }
     }
 }
