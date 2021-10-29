@@ -40,4 +40,7 @@ public class Lista {
         actual=actual.siguiente;
         }
     }
+    public void Encontrar(){
+        
+    }
 }

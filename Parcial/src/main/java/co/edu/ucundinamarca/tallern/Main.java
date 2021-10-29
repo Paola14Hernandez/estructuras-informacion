@@ -19,7 +19,7 @@ public class Main {
         do {
             log.info("1. Ingresar un Nodo");
             log.info("2. Mostrar la lista");
-            log.info("3. Buscar en la lista");
+            log.info("3. Encontrar mayor");
             log.info("4. Salir");
             log.info("Elija una Opcion");
             opcion = teclado.nextInt();
@@ -33,6 +33,10 @@ public class Main {
                 case 2:
                     log.info("Mostrar la Lista");
                     lista.Mostrar();
+                    break;
+                case 3:
+                    log.info("Enconttrar mayor");
+                    
                     break;
             }
 
