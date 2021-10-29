@@ -13,4 +13,14 @@ public class Nodo {
     int dato;
     Nodo siguiente;
     Nodo anterior;
+    
+    public Nodo(int dato) {
+        this(dato,null,null);
+    }
+
+    public Nodo(int dato, Nodo siguiente, Nodo anterior) {
+        this.dato = dato;
+        this.siguiente = siguiente;
+        this.anterior = anterior;
+    }
 }
