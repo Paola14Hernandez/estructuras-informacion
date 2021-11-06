@@ -1,12 +1,12 @@
 
-package co.edu.ucundinamarca.tallern;
+package Punto1;
 
 /**
  *
  * @author Paola Hernandez
  */
 public class Nodo {
-    int turno=1;
+    int turno=0;
     int cedula;
     String nombre;
     String nombreLibro;
