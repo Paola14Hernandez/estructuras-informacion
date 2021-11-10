@@ -34,7 +34,7 @@ public class Main {
                     log.info("Ingrese el nombre del Libro:");
                     teclado.nextLine();
                     String nombreLibro =teclado.nextLine();
-                    lista.ingresar(Nombre,cedula,turno,nombreLibro);
+                    lista.ingresar(Nombre,cedula,nombreLibro);
                     break;
                 case 2:
                     log.info("Mostrar lista");

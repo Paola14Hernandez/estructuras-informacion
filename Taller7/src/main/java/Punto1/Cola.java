@@ -25,7 +25,7 @@ public class Cola {
     }
     
     //metodo ingresar
-    public void ingresar(String nombre, int cedula,int turno,String nombreLibro){
+    public void ingresar(String nombre, int cedula,String nombreLibro){
         Nodo nuevo=new Nodo();
         nuevo.nombre=nombre;
         nuevo.cedula=cedula;
