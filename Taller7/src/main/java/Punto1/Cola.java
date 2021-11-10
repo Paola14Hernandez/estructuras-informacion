@@ -31,18 +31,30 @@ public class Cola {
         nuevo.cedula=cedula;
         nuevo.turno=turno;
         nuevo.nombreLibro=nombreLibro;
-        if (primero ==null){
+       
+        if (primero == null){
             primero=nuevo;
             primero.siguiente=primero;
             primero.anterior=ultimo;
             ultimo=nuevo;
-            turno= turno + 1;
+            turno++;
         }else {
             ultimo.siguiente=nuevo;
             nuevo.siguiente=primero;
             ultimo=nuevo;
             primero.anterior=ultimo;
-            turno=turno +1;
-        }  
+            turno++;
+         }
+        
     }
+    //metodo mostrar
+    public void Mostrar(){
+        Nodo actual=new Nodo();
+        actual=primero;
+        do{
+            log.info("Nombre cliente: "+ actual.nombre+" "+"Cedula: "+actual.cedula+" "+"Turno: "+actual.turno+" "+"Nombre del libro: "+actual.nombreLibro);
+            actual=actual.siguiente;
+        }while(actual!=primero);
+    } 
+    
 }
