@@ -1,13 +1,13 @@
 
 package co.edu.ucundinamarca.tallern;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author Paola Hernandez
  */
 public class NodoPrincipal {
-    int elemento;
-    NodoPrincipal hijo;
-    NodoPrincipal hermano;
-    
+    String elemento;
+   ArrayList<NodoPrincipal> hijos;   
 }
